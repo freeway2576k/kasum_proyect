@@ -1,6 +1,5 @@
 <template>
     <div class="min-h-screen bg-[#fff5eb] text-[#0a1e2e] font-sans">
-
         <header
             class="bg relative h-screen flex items-center justify-center text-center bg-cover bg-center bg-no-repeat overflow-hidden">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0a1e2e]/80 to-[#0a1e2e]/50"></div>

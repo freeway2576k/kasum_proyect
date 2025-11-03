@@ -15,13 +15,13 @@ const routes: Array<RouteRecordRaw> = [
     path: '/inicio',
     name: 'Home',
     component: Inicio,
-    meta: { requiresAuth: true }
+    
   },
   {
     path: '/transacciones',
     name: 'Transacciones',
     component: Transacciones,
-    meta: { requiresAuth: true }
+    
   },
   {
     path: '/login',
@@ -45,19 +45,19 @@ const routes: Array<RouteRecordRaw> = [
     path: '/gestus',
     name: 'GestionUsuarios',
     component: GestionUsuarios,
-    meta: { requiresAuth: true }
+    
   },
   {
     path: '/ahorros',
     name: 'Ahorros',
     component: Ahorros,
-    meta: { requiresAuth: true }
+    
   },
   {
     path: '/ajustes',
     name: 'Ajustes',
     component: Ajustes,
-    meta: { requiresAuth: true }
+    
   },
   {
     path: '/:pathMatch(.*)*',
@@ -70,16 +70,5 @@ const router = createRouter({
   routes,
 })
 
-router.beforeEach((to, from, next) => {
-  const userStore = useUserStore()
-
-  if (to.meta.requiresAuth && !userStore.isAuthenticated) {
-    next('/login')
-  } else if ((to.path === '/login' || to.path === '/registro') && userStore.isAuthenticated) {
-    next('/inicio')
-  } else {
-    next()
-  }
-})
 
 export default router

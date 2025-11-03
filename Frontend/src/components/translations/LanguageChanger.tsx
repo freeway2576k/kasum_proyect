@@ -5,24 +5,30 @@ export function LanguageChanger() {
   // `t` es la función de traducción, `i18n` es la instancia de i18next
   const { t, i18n } = useTranslation(); 
   
-  // Función para cambiar el idioma
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  const currentLang = i18n.language;
+  const newLang = currentLang === 'es' ? 'en' : 'es';
 
   return (
-    <div>
-      {/* 1. Usar la función `t` para traducir */}
-      <h2>{t('welcome_message')}</h2> 
+    <header className="flex justify-between items-center p-4 bg-white shadow-md dark:bg-gray-800">
       
-      {/* 2. Botones para cambiar el idioma */}
-      <p>{t('change_language')}:</p>
-      <button onClick={() => changeLanguage('en')}>
-        English
-      </button>
-      <button onClick={() => changeLanguage('es')}>
-        Español
-      </button>
-    </div>
+      {/* Uso de la función t para traducir texto */}
+      <h1 className="text-2xl font-bold dark:text-white">
+        {t('header_title')}
+      </h1> 
+
+      <div className="flex items-center space-x-4">
+        <label className="dark:text-white">{t('theme_switcher_label')}:</label>
+        {/* Aquí iría tu componente ThemeSwitcher */}
+        
+        {/* Botón para cambiar el idioma */}
+        <button
+          className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
+          onClick={() => (i18n.changeLanguage(newLang), window.location.reload())}
+          type="button"
+        >
+          {t('btn_change_lang')} ({newLang.toUpperCase()})
+        </button>
+      </div>
+    </header>
   );
 }

@@ -1,8 +1,18 @@
 {
-    "auth" : {
-        "login" : {
-            "title" : "Bienvenido",
-            "description" : "Login with your Apple or Google account"
+    "auth": {
+        "login_form": {
+            "title": "Bienvenido",
+            "description": "Ingresa y empieza a controlar tus finanzas",
+            "email": "Correo electrónico",
+            "password": "Contraseña",
+            "forgot_password": "¿Olvidaste tu contraseña?",
+            "login_with_apple": "Ingresa con Apple",
+            "login_with_google": "Ingresa con Google",
+            "terms_and_conditions": "Al hacer clic en continuar, aceptas nuestros <termsLink>Términos de Servicio</termsLink> y nuestra <privacyLink>Política de Privacidad</privacyLink>."
         }
-    }
+    },
+    "header_title": "Bienvenido al Panel de Control",
+    "theme_switcher_label": "Tema",
+    "btn_change_lang": "Cambiar Idioma",
+    "loading_translations": "Cargando contenido..."
 }

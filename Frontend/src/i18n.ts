@@ -1,37 +1,40 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-// 1. Importa el plugin del backend
-import Backend from 'i18next-http-backend'; 
+import Backend from 'i18next-http-backend';
 
 i18n
-  // 2. Le decimos a i18n que use el Backend
+  // Carga los archivos de traducción asíncronamente
   .use(Backend) 
-  
-  .use(LanguageDetector)
+  // Detecta el idioma del usuario (ej: configuración del navegador)
+  .use(LanguageDetector) 
+  // Conecta i18next con React
   .use(initReactI18next) 
   .init({
-    // Ya no necesitas la propiedad 'resources' aquí
-    // resources: { ... } 
-    
-    fallbackLng: "en", 
-    debug: true, 
-    
-    // 3. Configuración del Backend
+    // La ruta de la carpeta pública donde están los JSON
+    // {{lng}} = 'es', 'en', etc. | {{ns}} = 'translation' (por defecto)
     backend: {
-      // Esta es la ruta donde buscará los archivos:
-      // {{lng}} se reemplaza por 'en', 'es', etc.
-      // {{ns}} se reemplaza por el namespace, 'translation' por defecto.
       loadPath: '/locales/{{lng}}/{{ns}}.json' 
     },
     
-    // El namespace por defecto (translation.json)
-    ns: ["translation"], 
-    defaultNS: "translation",
+    // Configuración de idioma
+    fallbackLng: 'en', // Idioma a usar si el idioma detectado no está disponible
+    //lng: "es", // Opcional: Descomentar para forzar un idioma inicial
     
+    // Configuración de namespaces (archivos JSON)
+    ns: ['translation'], 
+    defaultNS: 'translation',
+
+    // Deshabilita el escape de valores (React ya maneja esto)
     interpolation: {
       escapeValue: false, 
     },
+    
+    // Opciones para la detección de idioma
+    detection: {
+      order: ['queryString', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      caches: ['localStorage'],
+    }
   });
 
 export default i18n;

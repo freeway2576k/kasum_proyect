@@ -1,8 +1,24 @@
 {
-    "auth" : {
-        "login" : {
-            "title" : "Welcome",
-            "description" : "Login with your Apple or Google account"
+    "auth": {
+        "login": "Login",
+        "signup": "Sign up",
+        "logout": "Logout",
+
+        "login_form": {
+            "title": "Welcome",
+            "description": "Login and start controlling your finances",
+            "email": "Email",
+            "password": "Password",
+            "forgot_password": "Forgot your password?",
+            "login_with_apple": "Login with Apple",
+            "login_with_google": "Login with Google",
+            "dont_have_account": "Don't have an account?",
+            "continue_with": "Or continue with",
+            "terms_and_conditions": "By clicking continue, you agree to our <termsLink>Terms of Service</termsLink> and <privacyLink>Privacy Policy</privacyLink>."
         }
-    }
+    },
+    "header_title": "Welcome to the Dashboard",
+    "theme_switcher_label": "Theme",
+    "btn_change_lang": "Change Language",
+    "loading_translations": "Loading content..."
 }

@@ -1,5 +1,6 @@
 import { ModeToggle } from "@/components/ModeToggle"
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { LanguageChanger } from "@/components/translations/LanguageChanger"
 import { GalleryVerticalEnd } from "lucide-react"
 import { Outlet } from "react-router-dom"
 
@@ -17,7 +18,7 @@ export const AuthLayout = () => {
           Kasum
         </a>
         <ModeToggle/>
-
+        <LanguageChanger/>
         <Outlet />
       </div>
     </div>

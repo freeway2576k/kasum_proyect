@@ -1,0 +1,8 @@
+{
+    "auth" : {
+        "login" : {
+            "title" : "Welcome",
+            "description" : "Login with your Apple or Google account"
+        }
+    }
+}

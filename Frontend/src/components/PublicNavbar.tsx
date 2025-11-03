@@ -3,6 +3,7 @@ import {  Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuI
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import { Button } from "./ui/button";
+import { ModeToggle } from './ModeToggle';
 
 const navigation = [
   { name: 'Dashboard', href: PATHS.DASHBOARD, current: true },

@@ -3,5 +3,6 @@ export const PATHS = {
     ABOUT: '/nosotros',
     CONTACT: '/contacto',
     DASHBOARD: '/dashboard',
-    LOGIN: '/login'
+    LOGIN: '/login',
+    LOGINV2: '/loginv2'
 }

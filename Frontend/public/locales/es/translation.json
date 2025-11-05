@@ -1,18 +1,37 @@
 {
     "auth": {
+        "login": "iniciar sesión",
+        "signup": "Registrarse",
+        "logout": "Cerrar sesión",
+        "login_with_google": "Ingresa con Google",
         "login_form": {
             "title": "Bienvenido",
             "description": "Ingresa y empieza a controlar tus finanzas",
             "email": "Correo electrónico",
             "password": "Contraseña",
             "forgot_password": "¿Olvidaste tu contraseña?",
-            "login_with_apple": "Ingresa con Apple",
-            "login_with_google": "Ingresa con Google",
-            "terms_and_conditions": "Al hacer clic en continuar, aceptas nuestros <termsLink>Términos de Servicio</termsLink> y nuestra <privacyLink>Política de Privacidad</privacyLink>."
-        }
-    },
+            "terms_and_conditions": "Al hacer clic en continuar, aceptas nuestros <termsLink>Términos de Servicio</termsLink> y nuestra <privacyLink>Política de Privacidad</privacyLink>.",
+            "dont_have_account": "¿No tienes una cuenta?",
+            "continue_with": "O continúa con"
+        },
+        "signup_form": {
+            "title": "Bienvenido",
+            "description": "Ingresa y empieza a controlar tus finanzas",
+            "first_name": "Nombre",
+            "last_name": "Apellido",
+            "email": "Correo electrónico",
+            "email_description": "Usaremos este correo electrónico para contactarte. No compartiremos tu correo electrónico con nadie más.",
+            "password": "Contraseña",
+            "password_description": "Debe tener al menos 8 caracteres.",
+            "confirm_password": "Confirmar contraseña",
+            "confirm_password_description": "Confirma tu contraseña.",
+            "create_account": "Crear cuenta",
+            "or_continue_with": "O continúa con",
+            "already_have_account": "¿Ya tienes una cuenta?"
+    }},
     "header_title": "Bienvenido al Panel de Control",
     "theme_switcher_label": "Tema",
     "btn_change_lang": "Cambiar Idioma",
-    "loading_translations": "Cargando contenido..."
+    "loading_translations": "Cargando contenido...",
+    "language": "(ES)"
 }

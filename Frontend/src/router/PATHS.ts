@@ -1,0 +1,12 @@
+export const PATHS = {
+    HOME: '/',
+    ABOUT: '/nosotros',
+    CONTACT: '/contacto',
+    DASHBOARD: '/dashboard',
+    LOGIN: '/auth/login',
+    LOGINV2: '/auth/loginv2',
+    SIGNUP: '/auth/signup',
+    RESET_PASSWORD: '/auth/reset-password',
+    FORGOT_PASSWORD: '/auth/forgot-password',
+    CHANGE_PASSWORD: '/auth/change-password',
+}

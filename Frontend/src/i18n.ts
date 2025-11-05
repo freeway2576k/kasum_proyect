@@ -6,7 +6,6 @@ import Backend from 'i18next-http-backend';
 i18n
   // Carga los archivos de traducción asíncronamente
   .use(Backend) 
-  // Detecta el idioma del usuario (ej: configuración del navegador)
   .use(LanguageDetector) 
   // Conecta i18next con React
   .use(initReactI18next) 

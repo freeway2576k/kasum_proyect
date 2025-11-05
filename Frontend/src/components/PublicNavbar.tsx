@@ -1,9 +1,8 @@
-import { PATHS } from '@/router/appRoutes'
-import {  Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { PATHS } from '@/router/PATHS'
+import {  Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import { Button } from "./ui/button";
-import { ModeToggle } from './ModeToggle';
 
 const navigation = [
   { name: 'Dashboard', href: PATHS.DASHBOARD, current: true },

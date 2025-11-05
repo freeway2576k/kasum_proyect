@@ -1,3 +1,4 @@
+import { PATHS } from "@/router/PATHS";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -101,10 +102,10 @@ export const Home = () => {
                             <li className="flex items-center"><span className="mr-2">✔</span> Gráficos básicos</li>
                             <li className="flex items-center"><span className="mr-2">✔</span> Soporte por correo</li>
                         </ul>
-                        <router-link to="/login"
+                        <Link to={PATHS.LOGIN}
                             className="w-full bg-[#fff5eb] text-[#0a1e2e] px-6 pt-3 pb-2  rounded-full font-semibold hover:bg-[#fff5eb]/80 transition-all duration-300 transform ">
                             Comenzar
-                        </router-link>
+                        </Link>
                     </div>
                     <div
                         className="relative bg-gradient-to-br from-[#0a1e2e] to-[#1a3c5e] text-[#fff5eb] p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-[#fff5eb]/20">
@@ -120,10 +121,10 @@ export const Home = () => {
                             <li className="flex items-center"><span className="mr-2">✔</span> Recordatorios personalizados</li>
                             <li className="flex items-center"><span className="mr-2">✔</span> Soporte prioritario</li>
                         </ul>
-                        <router-link to="/login"
+                        <Link to={PATHS.LOGIN}
                             className="w-full bg-amber-500 text-white pt-3 pb-2 pr-2 pl-2  rounded-full font-semibold hover:bg-amber-500/80 transition-all duration-300 transform">
                             Probar Ahora
-                        </router-link>
+                        </Link>
                     </div>
                     <div
                         className="relative bg-gradient-to-br from-[#0a1e2e] to-[#1a3c5e] text-[#fff5eb] p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-[#fff5eb]/20">
@@ -137,10 +138,10 @@ export const Home = () => {
                             <li className="flex items-center"><span className="mr-2">✔</span> Exportación de datos</li>
                             <li className="flex items-center"><span className="mr-2">✔</span> Soporte 24/7</li>
                         </ul>
-                        <router-link to="/login"
+                        <Link to={PATHS.LOGIN}
                             className="w-full bg-[#fff5eb] text-[#0a1e2e] px-6 pt-3 pb-2  rounded-full font-semibold hover:bg-[#fff5eb]/80 transition-all duration-300 transform">
                             Obtener Pro
-                        </router-link>
+                        </Link>
                     </div>
                 </div>
             </div>

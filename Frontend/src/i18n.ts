@@ -10,21 +10,16 @@ i18n
   // Conecta i18next con React
   .use(initReactI18next) 
   .init({
-    // La ruta de la carpeta pública donde están los JSON
-    // {{lng}} = 'es', 'en', etc. | {{ns}} = 'translation' (por defecto)
+    // {{lng}} = 'es', 'en', etc. | {{ns}} = 'translation'
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json' 
     },
+    fallbackLng: 'en',
+    //lng: "es", // para forzar un idioma inicial
     
-    // Configuración de idioma
-    fallbackLng: 'en', // Idioma a usar si el idioma detectado no está disponible
-    //lng: "es", // Opcional: Descomentar para forzar un idioma inicial
-    
-    // Configuración de namespaces (archivos JSON)
     ns: ['translation'], 
     defaultNS: 'translation',
 
-    // Deshabilita el escape de valores (React ya maneja esto)
     interpolation: {
       escapeValue: false, 
     },

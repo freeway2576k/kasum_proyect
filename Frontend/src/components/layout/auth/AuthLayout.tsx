@@ -34,8 +34,8 @@ export const AuthLayout = () => {
         <div className="text-center text-muted-foreground">
             <Trans i18nKey="auth.login_form.terms_and_conditions"
               components={{
-                termsLink: <Link to={"#"} className="hover:text-primary underline"></Link>,
-                privacyLink: <Link to="#" className="hover:text-primary underline"></Link>
+                termsLink: <Link to={PATHS.TERMS} className="hover:text-primary underline"></Link>,
+                privacyLink: <Link to={PATHS.PRIVACY} className="hover:text-primary underline"></Link>,
               }}></Trans>
         </div>
       </div>

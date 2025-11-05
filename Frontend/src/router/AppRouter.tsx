@@ -7,8 +7,11 @@ import { AuthLayout } from '@/components/layout/auth/AuthLayout'
 import { DashboardLayout } from '@/components/layout/dashboard/DashboardLayout'
 import { Login } from '@/views/auth/Login'
 import { Dashboard } from '@/views/public/Dashboard'
-import { Home } from 'lucide-react'
 import { SignupForm } from '@/components/auth/SignUpForm'
+import { Home } from '@/views/public/Home'
+import { About } from '@/views/public/About'
+import { Contact } from '@/views/public/Contact'
+import { TermsAndConds } from '@/views/public/TermsAndConds'
 
 export const AppRouter = () => {
   return (
@@ -16,6 +19,9 @@ export const AppRouter = () => {
       {/* Parte de la navegación pública */}
       <Route element={<PublicLayout/>}>
         <Route path={PATHS.HOME} element={<Home/>} />
+        <Route path={PATHS.ABOUT} element={<About/>} />
+        <Route path={PATHS.CONTACT} element={<Contact/>} />
+        <Route path={PATHS.TERMS} element={<TermsAndConds/>} />
       </Route>
 
       {/* Parte de autenticacion */}

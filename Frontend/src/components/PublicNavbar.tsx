@@ -1,14 +1,19 @@
 import { PATHS } from '@/router/PATHS'
-import {  Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Button } from "./ui/button";
 
-const navigation = [
-  { name: 'Dashboard', href: PATHS.DASHBOARD, current: true },
-  { name: 'Inicio', href: PATHS.HOME, current: false },
-  { name: 'Nosotros', href: PATHS.ABOUT, current: false },
-  { name: 'Contacto', href: PATHS.CONTACT, current: false },
+interface NavigationItem {
+  name: string;
+  href: string;
+  exact?: boolean;
+}
+
+const navigation: NavigationItem[] = [
+  { name: 'Inicio', href: PATHS.HOME, exact: true },
+  { name: 'Nosotros', href: PATHS.ABOUT },
+  { name: 'Contacto', href: PATHS.CONTACT },
 ]
 
 function classNames(...classes) {
@@ -16,6 +21,15 @@ function classNames(...classes) {
 }
 
 export default function PublicNavbar() {
+
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const isCurrent = (item: NavigationItem): boolean => {
+    if (item.exact) {
+      return item.href === currentPath;
+    }
+    return item.href === currentPath;
+  }
   return (
     <Disclosure
       as="nav"
@@ -42,19 +56,22 @@ export default function PublicNavbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    aria-current={item.current ? 'page' : undefined}
-                    className={classNames(
-                      item.current ? 'bg-gray-950/50 text-white' : 'text-gray-300 hover:bg-white/5 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium',
-                    )}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+                {navigation.map((item) => {
+                  const current = isCurrent(item);
+                  return (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      aria-current={current ? 'page' : undefined}
+                      className={classNames(
+                        current ? 'bg-foreground text-white shadow-lg' : 'text-gray-300 hover:bg-white/5 hover:text-white',
+                        'rounded-md px-3 py-2 text-sm font-medium',
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  )
+                })}
               </div>
             </div>
           </div>

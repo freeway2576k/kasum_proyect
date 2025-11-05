@@ -9,4 +9,7 @@ export const PATHS = {
     RESET_PASSWORD: '/auth/reset-password',
     FORGOT_PASSWORD: '/auth/forgot-password',
     CHANGE_PASSWORD: '/auth/change-password',
+    FAQ: '/faq',
+    TERMS: '/terminos-y-condiciones',
+    PRIVACY: '/politica-de-privacidad',
 }

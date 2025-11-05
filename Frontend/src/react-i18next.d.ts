@@ -1,5 +1,4 @@
-// Este archivo debe estar en tu carpeta 'src'
-import { resources } from './i18n'; //  truco para tipar
+import { resources } from './i18n'; //  truquito para tipar
 
 // Extiende el módulo 'react-i18next'
 declare module 'react-i18next' {

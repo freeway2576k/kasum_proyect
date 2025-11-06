@@ -12,7 +12,10 @@
             "forgot_password": "Forgot your password?",
             "dont_have_account": "Don't have an account?",
             "continue_with": "Or continue with",
-            "terms_and_conditions": "By clicking continue, you agree to our <termsLink>Terms of Service</termsLink> and <privacyLink>Privacy Policy</privacyLink>."
+            "terms_and_conditions": "By clicking continue, you agree to our <termsLink>Terms of Service</termsLink> and <privacyLink>Privacy Policy</privacyLink>.",
+            "errors": {
+            "invalid_email": "Invalid email",
+            "invalid_password": "Invalid password"}
         },
         "signup_form": {
             "title": "Welcome",
@@ -29,6 +32,199 @@
             "or_continue_with": "Or continue with",
             "already_have_account": "Already have an account?"
     }},
+    "home": {
+        "title": "KASUM: Control your Future Financials",
+        "description": "Manage your income and expenses with ease, get detailed reports and reach your financial goals with our intuitive platform.",
+        "button": "Try for Free",
+        "features": {
+            "title": "Features",
+            "1": {
+                "title": "Simple",
+                "description": "Register your income and expenses easily with categorization automatically."
+            },
+            "2": {
+                "title": "Visual",
+                "description": "Get clear charts to understand your financial health."
+            },
+            "3": {
+                "title": "Secure",
+                "description": "Connect your accounts to a complete (Standard/Pro) plan."
+            }
+        },
+        "testimonials": {
+            "title": "What Our Users Say",
+            "1": {
+                "description": "KASUM helped organize my finances in minutes."
+            },
+            "2": {
+                "description": "The graphs are super clear, now I control my budget."
+            },
+            "3": {
+                "description": "The synchronisation of bank accounts is a total change."
+            }
+        },
+        "plans": {
+            "title": "Plans for Everyone",
+            "1": {
+                "title": "Free",
+                "price": "0€/month",
+                "description": "Register manual and basic charts to get started.",
+                "features": {
+                    "1": "Register manual",
+                    "2": "Basic charts",
+                    "3": "Support by email"
+                },
+                "button": "Start"
+            },
+            "2": {
+                "title": "Standard",
+                "price": "7€/month",
+                "description": "Synchronisation of bank accounts, categories automatically and personalised records.",
+                "features": {
+                    "1": "Synchronisation of bank accounts",
+                    "2": "Categories automatically",
+                    "3": "Personalised records",
+                    "4": "Support for priority"
+                },
+                "button": "Try Now"
+            },
+            "3": {
+                "title": "Pro",
+                "price": "10€/month",
+                "description": "Team management, predictive analysis and data export.",
+                "features": {
+                    "1": "Team management",
+                    "2": "Predictive analysis",
+                    "3": "Data export",
+                    "4": "Support for 24/7"
+                },
+                "button": "Get Pro"
+            }
+        }
+    },
+    "about": {
+        "title": "About Us",
+        "history": {
+            "title": "History",
+            "description": "KASUM was founded in 2018 by Felipe M. and Alina C. with the aim of simplifying financial management and providing a user-friendly platform for anyone to use.",
+            "description2": "The project was initially developed as a personal project, but it quickly gained popularity among users and has since been adopted by various organizations."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "simplify": {
+                "title": "Simplify Financial Management",
+                "description": "KASUM is a user-friendly platform that simplifies financial management by providing a simple and intuitive interface for users to register their income and expenses, get detailed reports, and track their financial goals."
+            },
+            "empower": {
+                "title": "Empower Users",
+                "description": "KASUM empowers users to take control of their finances by providing them with the tools and features they need to manage their finances effectively and efficiently."
+            },
+            "security": {
+                "title": "Secure Financial Data",
+                "description": "KASUM ensures the security and privacy of financial data by implementing robust security measures and encryption protocols to protect user data."
+            }
+        },
+        "members": "Our Team",
+        "alina": "Alina C.",
+        "felipe": "Felipe M."
+    },
+    "contact": {
+        "main": {
+            "title": "Contact Us",
+            "subtitle": "Get in touch with us anytime, anytime."
+        },
+        "info": {
+            "title": "Get in Touch",
+            "phone": {
+                "label": "Phone Number"
+            },
+            "email": {
+                "label": "Email"
+            },
+            "address": {
+                "label": "Address"
+            },
+            "schedule": "Schedule a call"
+        },
+        "map": {
+            "title": "Our Location"
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "description": "Check out our FAQ section to find answers to common questions about KASUM."
+        },
+        "terms": {
+            "title": "Terms of Service",
+            "last_updated": "Last updated on July 1, 2023"
+        }
+    },
+    "terms": {
+        "title": "Terms of Service",
+        "last_updated": "Last updated on July 1, 2023",
+        "acceptance": {
+            "title": "Acceptance of Terms",
+            "content": "By using this website, you agree to comply with the terms and conditions set forth in this agreement."
+        },
+        "key_point": {
+            "title": "Key Points",
+            "content": "The terms and conditions set forth in this agreement govern your use of the website and any services provided by us. By using the website, you agree to comply with the terms and conditions set forth in this agreement. If you do not agree with any part of this agreement, you are not authorized to use the website."
+        },
+        "services_obligations": {
+            "title": "Services and Obligations",
+            "services": {
+                "title": "Services"
+            },
+            "obligations": {
+                "title": "Obligations",
+                "intro": "We may, at our sole discretion, modify or discontinue the services or the website at any time without notice. We will not be liable for any damages or losses arising from your use of the website or services."
+            }
+        },
+        "intellectual_property": {
+            "title": "Intellectual Property",
+            "content1": "All intellectual property rights in and to the website, including but not limited to copyrights, trademarks, patents, trade secrets, and other proprietary rights, are owned by us or our licensors. You may not copy, modify, distribute, or create derivative works based on the website or any part of it without our prior written consent.",
+            "content2": "We reserve the right to terminate your account or remove content that violates these terms or our policies at any time. We will not be liable for any damages or losses arising from your use of the website or services."
+        },
+        "liability": {
+            "title": "Liability",
+            "content": "We do not guarantee the accuracy, completeness, or reliability of the information provided on the website. We assume no responsibility for any errors or omissions in the content on the website. We reserve the right to update, change, or discontinue the website at any time without notice."
+        },
+        "law": {
+            "title": "Law and Jurisdiction",
+            "content": "These terms and conditions are governed by and interpreted in accordance with the laws of the United States of America, without regard to its conflict of law provisions. Any disputes arising out of or in connection with these terms and conditions shall be resolved solely through arbitration in accordance with the rules of the American Arbitration Association."
+        }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "last_updated": "Last updated on July 1, 2023",
+        "introduction": {
+            "title": "Introduction",
+            "content": "This privacy policy (“Policy”) explains how we collect, use, and protect your personal information when you use our website (“Site”). This Policy applies to all information collected on the Site, including information you provide through the Site, as well as any information we collect automatically when you use the Site. By using the Site, you agree to the terms of this Policy."
+        },
+        "information_collected": {
+            "title": "Information We Collect",
+            "content": "We may collect personal information from you when you register on the Site, such as your name, email address, phone number, and other contact information. We may also collect information from you when you interact with the Site, such as your IP address, browser type, and the pages you visit. We may collect information about your use of the Site, including the pages you visit, the time and date of your visit, the links you click on, and other information that may help us improve the Site. We may also collect non-personal information, such as your location, browsing history, and search queries. This information may be used to provide you with targeted advertising, to improve our website, to better understand your needs and preferences, or to detect and prevent fraud."
+        },
+        "use_of_information": {
+            "title": "Use of Information",
+            "content": "We use the information we collect to provide and improve the Site, its services, and the products and services offered through the Site. We may use your information to personalize your experience on the Site, to provide and deliver products and services that may be of interest to you, and to improve our website and our services. We may also use your information to communicate with you about other products and services we offer, to respond to your feedback, and to provide you with customer support."
+        },
+        "sharing_of_information": {
+            "title": "Sharing of Information",
+            "content": "We do not share personal information about you with third parties, except as necessary to provide you with our products and services, to fulfill your orders, or to protect your rights or property. We may share aggregated and non-personal information about you with our affiliates, advertisers, and other third parties for their own marketing purposes."
+        },
+        "security": {
+            "title": "Security",
+            "content": "We take appropriate measures to protect your personal information from unauthorized access, use, disclosure, or destruction. However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee the absolute security of your information. We will take reasonable measures to protect your information from loss, misuse, or alteration."
+        },
+        "changes": {
+            "title": "Changes to this Policy",
+            "content": "We may update this Policy from time to time. We encourage you to review this Policy periodically for any changes. Your continued use of the Site after any changes to this Policy constitutes your acceptance of the updated Policy. If you do not agree to any changes to this Policy, you should discontinue your use of the Site."
+        },
+        "contact": {
+            "title": "Contact Us",
+            "content": "If you have any questions about this Policy, please contact us at <a href=\"mailto:privacy@kasum.com\">privacy@kasum.com</a>."
+        }
+    },
     "header_title": "Welcome to the Dashboard",
     "theme_switcher_label": "Theme",
     "btn_change_lang": "Change Language",

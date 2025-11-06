@@ -3,6 +3,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link, useLocation } from 'react-router-dom'
 import { Button } from "./ui/button";
+import { useTranslation } from 'react-i18next';
 
 interface NavigationItem {
   name: string;
@@ -21,7 +22,7 @@ function classNames(...classes) {
 }
 
 export default function PublicNavbar() {
-
+  const { t } = useTranslation();
   const location = useLocation();
   const currentPath = location.pathname;
   const isCurrent = (item: NavigationItem): boolean => {
@@ -64,7 +65,7 @@ export default function PublicNavbar() {
                       to={item.href}
                       aria-current={current ? 'page' : undefined}
                       className={classNames(
-                        current ? 'bg-foreground text-white shadow-lg' : 'text-gray-300 hover:bg-white/5 hover:text-white',
+                        current ? 'bg-blue-900 text-white shadow-lg' : 'text-gray-300 hover:bg-white/5 hover:text-white',
                         'rounded-md px-3 py-2 text-sm font-medium',
                       )}
                     >
@@ -78,7 +79,7 @@ export default function PublicNavbar() {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
             {/* Profile dropdown */}
-            <Link to={PATHS.LOGIN}> <Button className='bg-white/5 hover:bg-gray-950/50'>Empieza ya!</Button></Link>
+            <Link to={PATHS.LOGIN}> <Button className='bg-white/5 hover:bg-blue-900 text-white'>{t("auth.login")}</Button></Link>
           </div>
         </div>
       </div>

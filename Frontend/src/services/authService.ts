@@ -16,7 +16,6 @@ interface LoginPayload {
   }
   
 export async function login(loginPayload: LoginPayload):Promise<LoginResponse> {
-    try {
         const response = await fetch(`${API_BASE_URL}/auth/login`, {
           method: "POST",
           headers: {
@@ -26,10 +25,11 @@ export async function login(loginPayload: LoginPayload):Promise<LoginResponse> {
         });
         
         if (!response.ok) {
-          throw new Error("Failed to login");
+          const errorBody = await response.json().catch(()=> null);
+        const message = errorBody?.message || "Something went wrong";
+        throw new Error(message);
         }
         
-    } catch (error) {
-        
-    }
+        return response.json();
+
 }

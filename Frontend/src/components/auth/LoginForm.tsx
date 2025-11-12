@@ -51,7 +51,7 @@ export function LoginForm({
           render={({ field, fieldState }) => (
             <Field data-invalid={fieldState.invalid}>
               <FieldLabel htmlFor="email">{t("auth.login_form.email")}</FieldLabel>
-              <Input id="email" type="email" placeholder="m@example.com" {...field} aria-invalid={fieldState.invalid} autoComplete="off" />
+              <Input className="" id="email" type="email" placeholder="m@example.com" {...field} aria-invalid={fieldState.invalid} autoComplete="off" />
               {fieldState.invalid && (<FieldError errors={[fieldState.error]}>{t(fieldState.error?.message)}</FieldError>)}
             </Field>
           )}

@@ -9,7 +9,6 @@ import { Link, Outlet } from "react-router-dom"
 export const AuthLayout = () => {
   return (
 
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
     
     <div className="grid min-h-svh lg:grid-cols-2">
       <div className="flex flex-col gap-4 p-6 md:p-10">
@@ -47,6 +46,5 @@ export const AuthLayout = () => {
         />
       </div>
     </div>
-    </ThemeProvider>
   )
 }
